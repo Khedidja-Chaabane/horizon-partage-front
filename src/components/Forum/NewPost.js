@@ -1,6 +1,8 @@
 import React from 'react'
 
 function NewPost() {
+  
+  
   return (
     <div>
         <h1 claas="mt-3 mb-3 text-center">Nouvel article</h1>
@@ -20,9 +22,14 @@ function NewPost() {
       </div>
       <div class="mb-3">
         <label for="images" class="form-label">Images</label>
-        <input type="text" class="form-control" id="images" name="images" required />
+        <input type="text" class="form-control" id="auteur" name="images"/>
+        <input type="text" class="form-control" id="auteur" name="images"/>
+        <input type="text" class="form-control" id="auteur" name="images"/>
+        <input type="text" class="form-control" id="auteur" name="images"/>
+
+
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Enregistrer</button>
     </form>
   </div>
     </div>

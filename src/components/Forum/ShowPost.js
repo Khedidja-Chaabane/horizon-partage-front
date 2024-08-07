@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom' 
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { GreenButton } from '../Buttons/Button.style';
 
-function Profile() {
+function ShowPost() {
     const { id } = useParams();  // Extraire l'ID des paramètres d'URL
     const [loading, setLoading] = useState(true); 
     const [error, setError] = useState('');
@@ -11,7 +10,7 @@ function Profile() {
 
     useEffect(() => {   
        
-        axios.get(`http://localhost:5000/user/${id}`)  // Utiliser l'ID dans la requête
+        axios.get(`http://localhost:5000/post/${id}`)  // Utiliser l'ID dans la requête
                     .then(response => {
                 setLoading(false);
                 console.log(response.data);
@@ -28,11 +27,10 @@ function Profile() {
 
   return (
     <div>
-        <GreenButton><Link to="http://localhost:5000/logout">Déconnexion</Link></GreenButton>
-<h3>{loading ? 'Loading ......' :`Bonjour ${data.username} , Voici votre profil`}</h3>
-{error ? error : null }
-</div>
+            <h1 class="text-center mt-3 mb-3">{data.titre}</h1>
+
+    </div>
   )
 }
 
-export default Profile
+export default ShowPost

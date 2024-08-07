@@ -1,4 +1,6 @@
 import React from 'react'
+import { GreenButton } from '../Buttons/Button.style'
+import { Link } from 'react-router-dom'
 
 function Connexion() {
    
@@ -19,6 +21,13 @@ function Connexion() {
        
         <button type="submit" class="btn btn-primary"><i class="bi bi-box-arrow-in-right"></i> Connexion</button>
     </form>
+
+    <div class="ccontainer">
+        <h6>Pas encore inscrit ?</h6>
+        <h6>Veuillez vous inscrire</h6>
+        <GreenButton><Link to="/Inscription">Inscription</Link></GreenButton>
+
+    </div>
 </div>
   )
 }
