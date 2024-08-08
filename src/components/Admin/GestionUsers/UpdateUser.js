@@ -18,6 +18,11 @@ function UpdateUser({data}) {
         </div>        
                 <button type="submit" className="btn btn-primary">Mettre à jour</button>
             </form>
+            <div class="mt-3">
+            <form action={`http://localhost:5000/admin/deleteUser/${data._id}?_method=DELETE`}method="post">
+<button>Supprimer</button>
+</form>
+            </div>
     </div>
   )
 }

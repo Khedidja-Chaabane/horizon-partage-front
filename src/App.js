@@ -18,6 +18,7 @@ import NewAction from './components/Actions/NewAction';
 import GestionActions from './components/Admin/GestionActions/GestionActions';
 import ShowAction from './components/Actions/ShowAction';
 import UpdateUser from './components/Admin/GestionUsers/UpdateUser';
+import UpdateAction from './components/Admin/GestionActions/UpdateAction';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path='/admin' element={<Admin/>}>
         <Route path='/admin/gestionUsers' element={<GestionUsers/>}/>
         <Route path='/admin/gestionActions' element={<GestionActions/>}/>
+        <Route path='/admin/updateAction/:id' element={<UpdateAction/>}/>
 
         <Route path='/admin/showUser/:id' element={<ShowUser/>}/>
         <Route path='/admin/updateUser/:id' element={<UpdateUser/>}/>

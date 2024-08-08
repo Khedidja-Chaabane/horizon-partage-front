@@ -65,7 +65,7 @@ function Actions() {
                 <p>{action.description} </p>
 
                 <button><Link to={`/showAction/${action._id}`}>Afficher l'action'</Link></button>
-                {/* <button><Link to={`/editPost/${post._id}`}>Modifier le post</Link></button> */}
+              
                 <hr />
                 {state.error ? 'Une erreur est survenue' : null}
             </div>
