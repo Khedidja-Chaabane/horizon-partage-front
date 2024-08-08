@@ -4,10 +4,10 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        {/* <a className="navbar-brand" href="#">
           <img src="" alt="Logo" width="30" height="24" className="d-inline-block align-text-top" />
           
-        </a>
+        </a> */}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -23,7 +23,7 @@ function Navbar() {
               <a className="nav-link" href="/connexion">Connexion/Inscription</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a className="nav-link" href="/actions">Actions</a>
             </li>
           </ul>
         </div>
