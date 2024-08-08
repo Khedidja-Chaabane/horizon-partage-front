@@ -25,6 +25,9 @@ function Navbar() {
             <li className="nav-item">
               <a className="nav-link" href="/actions">Actions</a>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/newDon">Faire un don</a>
+            </li>
           </ul>
         </div>
       </div>

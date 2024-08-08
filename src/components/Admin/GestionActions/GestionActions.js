@@ -45,7 +45,7 @@ function GestionActions() {
         <div>
             <button><Link to="/newAction">Ajouter une nouvelle action</Link></button>
             <React.Fragment>
-                <h1 class="text-center mt-3 mb-3">Nos actions</h1>
+                <h1 class="text-center mt-3 mb-3">Liste des actions</h1>
 
                 {state.loading ? 'Chargement...' : state.actions.map((action, index) => {
                     return (

@@ -75,16 +75,16 @@ function UpdateAction() {
           </form>
         )}
         <div>
-          {/* Formulaire pour supprimer le post */}
-          {/* {loading ? (
+          {/* Formulaire pour supprimer L'action */}
+          {loading ? (
             'Chargement...'
           ) : (
             <div>
-              <form action={`http://localhost:5000/deletePost/${id}?_method=DELETE`} method="post">
+              <form action={`http://localhost:5000/admin/deleteAction/${id}?_method=DELETE`} method="post">
                 <button type="submit" className="btn btn-danger mt-3">Supprimer</button>
               </form>
             </div>
-          )} */}
+          )}
         </div>
         {error ? 'Une erreur est survenue' : null}
       </div>

@@ -19,6 +19,7 @@ import GestionActions from './components/Admin/GestionActions/GestionActions';
 import ShowAction from './components/Actions/ShowAction';
 import UpdateUser from './components/Admin/GestionUsers/UpdateUser';
 import UpdateAction from './components/Admin/GestionActions/UpdateAction';
+import NewDon from './components/Dons/NewDon';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path='/actions' element={<Actions />} />
         <Route path='/newAction' element={<NewAction />} />
         <Route path='/showAction/:id' element={<ShowAction/>} />
+        <Route path='/newDon' element={<NewDon/>} />
 
         <Route path='/inscription' element={<Inscription />} />
         <Route path='/connexion' element={<Connexion />} />
